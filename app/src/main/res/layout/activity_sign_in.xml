@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.artur.private_messenger.SignInActivity">
+
+    <ImageView
+        android:src="@drawable/sign_in_logo"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"   />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:inputType="textEmailAddress"
+        android:layout_height="wrap_content"
+        android:hint="Your Email"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        android:hint="Your Password"/>
+
+    <EditText
+        android:id="@+id/repeatPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"/>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:inputType="textPersonName"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"/>
+
+    <Button
+        android:id="@+id/loginSignUpButton"
+        android:layout_gravity="center_horizontal"
+        android:text="Sign Up"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/toggleLoginSignUpTextView"
+        android:text="Tag To Log In"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="toggleLoginMode"/>
+
+
+</LinearLayout>
